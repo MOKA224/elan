@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élan - Men's Clothing</title>
+    <!-- Bootstrap CSS -->
+    <link href="Men.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="filter-section">
+            <h3>Filters</h3>
+        </div>
+
+        <div class="filter-section">
+            <h3 style="color: #E5E5E5;">Product Type</h3>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="coat" data-filter="type" value="Coat">
+                <span class="checkmark"></span>
+                <label for="coat">Coat</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="hoodie" data-filter="type" value="Hoodie">
+                <span class="checkmark"></span>
+                <label for="hoodie">Hoodie</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="tshirt" data-filter="type" value="T-Shirt">
+                <span class="checkmark"></span>
+                <label for="tshirt">T-Shirt</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="sweater" data-filter="type" value="Sweater">
+                <span class="checkmark"></span>
+                <label for="sweater">Sweater</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="jeans" data-filter="type" value="Jeans">
+                <span class="checkmark"></span>
+                <label for="jeans">Jeans</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="cargo" data-filter="type" value="Cargo">
+                <span class="checkmark"></span>
+                <label for="cargo">Cargo</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="shorts" data-filter="type" value="Shorts">
+                <span class="checkmark"></span>
+                <label for="shorts">Shorts</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="sweatpants" data-filter="type" value="Sweatpants">
+                <span class="checkmark"></span>
+                <label for="sweatpants">Sweatpants</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h3 style="color: #E5E5E5;">Size</h3>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="xs" data-filter="size" value="XS">
+                <span class="checkmark"></span>
+                <label for="xs">XS</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="s" data-filter="size" value="S">
+                <span class="checkmark"></span>
+                <label for="s">S</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="m" data-filter="size" value="M">
+                <span class="checkmark"></span>
+                <label for="m">M</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="l" data-filter="size" value="L">
+                <span class="checkmark"></span>
+                <label for="l">L</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="xl" data-filter="size" value="XL">
+                <span class="checkmark"></span>
+                <label for="xl">XL</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="xxl" data-filter="size" value="XXL">
+                <span class="checkmark"></span>
+                <label for="xxl">XXL</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="3xl" data-filter="size" value="3XL">
+                <span class="checkmark"></span>
+                <label for="3xl">3XL</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="me-3">Men</h1>
+                <span class="text-muted">141 Items</span>
+            </div>
+            <div class="sorting-container">
+                <select id="sort-dropdown" class="form-select">
+                    <option value="default">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <div class="product-card" data-type="Coat" data-size="M" data-name="Pastel Long Sleeve" data-price="89.99">
+                <img src="https://s3-alpha-sig.figma.com/img/0a92/8c15/cfd067e15a57d7c7e3b2fff61bbf3fab?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ktTxJZSRMGvl5-a7fagbw2FW~AvnkN-mixwaUF-qDVgyypnWjylfnFK~nMicasFnVwe0QEfn60PgIoJVh8DNFDKzVVIGowki9bWGC9JxQd~COUqELh5GVLsUkJJjtEE-weE2hFpWWnfo8yBbtUEE2PFz6d8Nq~X6XI2w0tqVkt0f1VRT8pMe3cIOg8kvP6Anc2yNv5aJaDyqKkb8G4KtolW19ylufTe7i0P2VyhgAnijAzUpy6Tz7tUNiC0tglMlVniVbdfLvPwvhPiB9I7-GAXz6DeUBWC65CoTNs5QIrsKFVvyAz7SsQctHGo9PpA9ROWs9NaJ6aEDvd6AxwOmtQ__" alt="Product 2">
+                <div class="product-info">
+                    <h5>Brown Jacket</h5>
+                    <p>$89.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shirt" data-size="L" data-name="Regular Fit Coat" data-price="49.99">
+                <img src="https://s3-alpha-sig.figma.com/img/598f/d93d/718156a465c12da793d20d5e24118186?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jWpxD6YyE4MentLLHob8fmxe2axBKP-xd00nGOLg1E8jUvqFI3roWUkt5MWY0Uew0ds6y17fQ-p9~Zk2gGYCjsnyO3At2LaXvCYLC8XCTk~6h4ph3ivQ3dNimk~4N7GobItPSR2L6fdSXaYPUfOWcb~4fpFtHH699FjhhJedS9K8dg3wX25WAT9P1oj2dUqBpId8j9s8SmvV61UbpmZzAUpR7ibBu-M04ctliuRW4OqH8g2qPj8d7v~2gm~oNdeCHJHJVGqxoXMRYPaSn9IZaDegW3PuFDv8AbWRCFBKnq4iJ0iMWPhdoWPADOKLSTgdm84Iy2Nsq9Ze8zT0ljc2Ng__" alt="Product 1">
+                <div class="product-info">
+                    <h5>Pink Shirt</h5>
+                    <p>$49.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Jeans" data-size="M" data-name="Cargo Pants" data-price="69.99">
+                <img src="https://s3-alpha-sig.figma.com/img/1e14/3e69/391da2c63d6ed87773627163f3b092fd?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nXcCK~g-UOOTPUN~Fx7fwFQNttEIXZVecPuOjx~O0Nibv1GYooe7etMiMuMSkGOXetPMSgPjupCOiNiyEuHsPBBep-OvqCOFYSWPH7Rpv7UgxU2E1zu6Kdk2SKgtGDO0rUsxx~0jctP0aRrPjG5TGS2KgIV~WXqjh8jdadfIkh8mkCS-pbd6QDc~93vHeMNks9P1lnwiivAaQx7jwxHq8ObqQ02pvnmd1aOYNhsk2g7UzdSeKcw2csnhWDmT2X-99tOHKdgogmuAUHUSg81gHcTPyc5wFgz4e-SqpbuTc1YcM0hnFZr~t-PxOwQ9dUGYJ1tgiwcZ8wwUrAhTNO0AAw__" alt="Product 3">
+                <div class="product-info">
+                    <h5>Dark Jeans</h5>
+                    <p>$69.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shirt" data-size="S" data-name="T-Shirt" data-price="45.99">
+                <img src="https://s3-alpha-sig.figma.com/img/3db2/7c54/a395806a36c159f4ff434db5b94a5a39?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Jc-pQ-qbOp~17dBJCBlPpdfizK~Gi9J7YYT5A0olz5IY1ZilxEqwBV9khTXmDmomsPEy4YwRUFxMrkc6E6yp2w6jGMxsyaZo7yBVgO~pN3YqqyvD~vVReYO9ibsyS7wAlRh8nGrOLB41RhcUmfXFZNm4CkgKyhDwext9HlP8j5pUj~7VLcpXOxqw6bjdxh9Bmk4kFZ07LEpUMBnKfyNtM0~yWsPpiayJNm9NozuakzQ6h~mGanJFfp19sWXhOmYg9Pfn0evc8gAMC7fEPF~ge-9yuQCFy~YyjL5eDGwDTHPgnuXsKY1CHDMSHRqoXbm-QMYGkGuBIKUc~RxCf2Wpbg__" alt="Product 4">
+                <div class="product-info">
+                    <h5>Mint Shirt</h5>
+                    <p>$45.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shirt" data-size="XL" data-name="Sweater" data-price="39.99">
+                <img src="https://s3-alpha-sig.figma.com/img/9eb1/f291/f7685df9dd97aa0193ff7137c276a9f7?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K2QujWRADbVbfB-UYjhuVX2NkXaaZorHcvYmID1WeH9-nFrxfllH5xKy4k9R~ILzeatUoHwf0yTfhCA39WcllfASaNlJPXJo2MOwNIWRzHS2FopCrxM4g4~qR5fp2hdzzOuztNMjvwYrat0Mg4xDvioBZEIXrKn~MFZ2h2b4HYA60gUhQw9yitOBYhroHhaJlh19SzFnLyUkEL~0QKqIkBZfTpnkWbjQsgF01VcPfBcW0BqGqyF09qjD5pzhtNnKaJ-iyRWyHU78Ae5KUdYWLRhwxKhoYGWJbENJO2WZ8UTE~t3HQ58Il~8kW-x6tKYlaC8-ETHKriCsDgh1UxH10Q__" alt="Product 5">
+                <div class="product-info">
+                    <h5>Purple Shirt</h5>
+                    <p>$39.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shorts" data-size="L" data-name="Shorts" data-price="34.99">
+                <img src="https://s3-alpha-sig.figma.com/img/fd26/188f/0af99a63fe85eb94085c35f7fd380e77?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jmWkOqaoRpsCTsAf64F7qeQeQcTliJuAxuarom2-smp12nalB2CbtKp8FJgXjX1pdxfZ1EiLrU~3ouEGypRBrDdODkH6JVj13g2yhkVdUsibtoE23WYxx12CmgtmSQJq7XPTxRd2Lt8mycBG-FoXj74zFALQzrtD-JZ46h9IvhBYt6uuav-2THeLMnJSIqTJoAqu5ADaMRQkKYjbUW3mSIR8qXDvLWFhZ6heRlGcRy3pY8hGBaGOgy4a40t43p0LllW5ImrhygLHnRSKP7XAyzHUlJkKfVLbj0sR9j~c4sBGBZGN0HXdXiN9F3w091pQ16sRabXnT4mmRjklri1FnA__" alt="Product 6">
+                <div class="product-info">
+                    <h5>Light Shorts</h5>
+                    <p>$34.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Hoodie" data-size="XL" data-name="Hoodie" data-price="59.99">
+                <img src="https://s3-alpha-sig.figma.com/img/3ddf/6912/3f5e545dbdf3ecc5031a9028417f4fc9?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OO5SZ2ELZiMADQlzTKwBIEhlPX6xr2w2Z6q3sSBSByYGCL1Pa0rK3hn8n5Zz-Ou6pZg9nG73acd2lAK8dDl8UPPIUqvndtSOfC5FD0y4w5OhO2zzv5n2drt9U16tEsf9IiUYQcW2CKljFqxz-M2mbaKPcvjJXX2aSCyp~Fscw5DJmbnYJ~QjHVhyXHs4-2JMl4MkbpjJkhJfxeE-AxNl65PZP2V1xAMxFdghhSWN95izksfHT~hsuWjLsik7VqqBvUpp0gF6hKlF1RrNJoUZrEC3idjx-yFMdHCbvrmyoi7nT50TihO4cxzn4clqoQwSN6C3cddN7Suj5wMj5htVpQ__" alt="Product 7">
+                <div class="product-info">
+                    <h5>Blue Hoodie</h5>
+                    <p>$59.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shorts" data-size="M" data-name="Shorts" data-price="44.99">
+                <img src="https://s3-alpha-sig.figma.com/img/fa1a/368c/b40200050c4171612f06044ac57a6f2b?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=bn7nbo6TL4aECZzrPWitCJF3bqWMDxbjioAmeCsBaYhKjpQSmgfejdoGKexZiu9zIXMa5pp1jKIqXVAodzuOthtthwuRwKdIeLaVBYEjAKqhJV~VQTrmKT1oG0dkvJO6O26RGdrkfq3AxLK49UvJX4dJfcA9ivnlBioK-GMJbYLXnfMtcnEBvqmCHgwYrubcWRL35E3q1AY8m~3v6PFfIajwtDCToWw8ruD0tUCLFEdMKRZywPRsL-dIWopDE8-tQX72PHAeHSI2LSWJbxFhtrGJ7xrLi3g4exCFHyACdYFi7G5ZYkKIsWRPuvKWptvB7ECM~WgvOP7HJOcXz8THCg__" alt="Product 8">
+                <div class="product-info">
+                    <h5>Gray Shorts</h5>
+                    <p>$44.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Coat" data-size="L" data-name="Pastel Long Sleeve" data-price="79.99">
+                <img src="https://s3-alpha-sig.figma.com/img/8477/354a/2a5887b9e1d875ea57eb7d0bca09f3e8?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fVBZsBJF02eZMI75NOqsIGrLuVq2WUgTF4Kla38SVCPsY2pxvjTGTXoJbqIKbpiH8mJY2qHV3w~419pNsQr3ohgS1zw7RdcUY3xRFTebq1AIu41AEkU9wLCOyf3-6glhzuBWNlkpUtFWsOm0oaMOleFBdoTfZ61hLefiOtbu80oHW95kuPmbKP1e-7T~LTV2CgGsPF44hEFqSIr3PW5G6iSrJk453ZqWJjRW6ZcgIjt8YfwmuiEfBSVTxsHHjK2tSsvQLrzWq~mETwKQ5V84sPvEDGOr~iGaN9L3azS5N1xyVVuMuRuIslaW1xTx1edeVaD7TzIWU3NhBy0fspE35Q__" alt="Product 9">
+                <div class="product-info">
+                    <h5>Beige Jacket</h5>
+                    <p>$79.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3">
+            <p id="product-count">Total 9 / 141 items</p>
+            <button class="btn btn-dark load-more">Load More Items</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-dark text-light text-center py-4 mt-4">
+        <h3>Fashion guides, tips, and The Most Wanted Trends</h3>
+        <div class="social-icons mt-3">
+            <a href="#" class="text-light mx-2">Instagram</a>
+            <a href="#" class="text-light mx-2">Facebook</a>
+            <a href="#" class="text-light mx-2">Twitter</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="Men.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEDDCC;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Top Banner Styles */
+.top-banner {
+    background-color: #34251F;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.offer-text {
+    color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.help-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #E5E5E5;
+}
+
+.help-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.help-text, .track-order {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.vertical-line {
+    height: 25px;
+    width: 1px;
+    background-color: #E5E5E5;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: #34251F;
+    align-self: flex-start;
+    margin: 30px 0 0 60px;
+}
+
+.progress-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #34251F;
+    margin-top: 20px;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cart-icon {
+    position: relative;
+    height: 120px;
+}
+
+.smile-icon {
+    width: 87px;
+    height: 87px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cart-img {
+    width: 160px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: #34251F;
+    margin-top: 120px;
+}
+
+.sub-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #34251F;
+    margin-top: 20px;
+}
+
+.add-items-btn {
+    background-color: #34251F;
+    color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 25px 80px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-items-btn:hover {
+    background-color: #463532;
+}
+
+.wave-decoration {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.wave-img {
+    width: 100%;
+    height: auto;
+}
+

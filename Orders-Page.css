@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #EEDDCC;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 303px;
+    background-color: #34251f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    color: #e5e5e5;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    color: #e5e5e5;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(229, 229, 229, 0.1);
+}
+
+.sidebar-item.active {
+    background-color: #e5e5e5;
+    color: #34251f;
+}
+
+.sidebar-item img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.sidebar-item span {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.sidebar-item.active span {
+    color: #34251f;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.orders-header {
+    margin-bottom: 30px;
+}
+
+.orders-header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #34251f;
+    margin-bottom: 10px;
+}
+
+.orders-header p {
+    font-size: 24px;
+    font-weight: 900;
+    color: #5f4f48;
+}
+
+.order-card {
+    background-color: #34251f;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #e5e5e5;
+}
+
+.order-card img {
+    width: 177px;
+    height: 222px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.delivery-date {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.order-id {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Top Navigation Styles */
+.top-nav {
+    background-color: #faf6f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #34251f;
+}
+
+.nav-links a {
+    color: #34251f;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.top-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #cdbbaa;
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 45px;
+    width: 251px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    color: #34251f;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icons img {
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+}
+
+/* Top Banner Styles */
+.top-banner {
+    background-color: #34251f;
+    color: #e5e5e5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-left {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-right div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.banner-divider {
+    width: 1px;
+    height: 25px;
+    background-color: #e5e5e5;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #34251f;
+    color: #e5e5e5;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left {
+    font-size: 20px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 20px;
+}

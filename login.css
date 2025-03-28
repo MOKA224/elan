@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(238,221,204,1) 0%, rgba(145,129,118,1) 60%, rgba(52,37,31,1) 106.93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    width: 700px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in {
+    text-align: center;
+    color: #34251f;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #34251f;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 81px;
+    border: 1.5px solid #34251f;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #34251f;
+}
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid #34251f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remember-me label {
+    color: #34251f;
+    font-size: 24px;
+}
+
+.forgot-password {
+    color: #34251f;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 445px;
+    height: 85px;
+    background: #34251f;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background: #463531;
+}
+
+.register-prompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-prompt span {
+    color: #34251f;
+    font-size: 24px;
+}
+
+.register-link {
+    color: #34251f;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

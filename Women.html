@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élan - Women's Clothing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Women.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="filter-section">
+            <h3>Filters</h3>
+        </div>
+
+        <div class="filter-section">
+            <h3 style="color: #E5E5E5;">Product Type</h3>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="dress" data-filter="type" value="Dress">
+                <span class="checkmark"></span>
+                <label for="dress">Dress</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="top" data-filter="type" value="Top">
+                <span class="checkmark"></span>
+                <label for="top">Top</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="sweater" data-filter="type" value="Sweater">
+                <span class="checkmark"></span>
+                <label for="sweater">Sweater</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="jacket" data-filter="type" value="Jacket">
+                <span class="checkmark"></span>
+                <label for="jacket">Jacket</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="pants" data-filter="type" value="Pants">
+                <span class="checkmark"></span>
+                <label for="pants">Pants</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="skirt" data-filter="type" value="Skirt">
+                <span class="checkmark"></span>
+                <label for="skirt">Skirt</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="shorts" data-filter="type" value="Shorts">
+                <span class="checkmark"></span>
+                <label for="shorts">Shorts</label>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h3 style="color: #E5E5E5;">Size</h3>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="xs" data-filter="size" value="XS">
+                <span class="checkmark"></span>
+                <label for="xs">XS</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="s" data-filter="size" value="S">
+                <span class="checkmark"></span>
+                <label for="s">S</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="m" data-filter="size" value="M">
+                <span class="checkmark"></span>
+                <label for="m">M</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="l" data-filter="size" value="L">
+                <span class="checkmark"></span>
+                <label for="l">L</label>
+            </div>
+            <div class="filter-checkbox">
+                <input type="checkbox" id="xl" data-filter="size" value="XL">
+                <span class="checkmark"></span>
+                <label for="xl">XL</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div>
+                <h1 class="me-3">Women</h1>
+                <span class="text-muted">135 Items</span>
+            </div>
+            <div class="sorting-container">
+                <select id="sort-dropdown">
+                    <option value="default">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <div class="product-card" data-type="Sweater" data-size="M" data-name="Crop Top" data-price="59.99">
+                <img src="https://s3-alpha-sig.figma.com/img/430b/32c4/ca0362cef042ef406ad0480f4c26fa2a?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Q5mi7epWFTL8~KBCGk601Uq-LQnK-5mJqtsMOgvHMJAHYxt2Ve9C7yKdPKM6u~qIm759XqtUN02juAil-niLaooEzUDd1lClkt3a6GRf4qlnthDno1J5kzcZxcEdudDFI1FtysGoMdxutcIDnfxbxCd-R88CLUuhUn~qd0101VgxA86e8-2lCJRQOiVqApPOHN9D4vcW~H8Au96gNyA7Vd3FdPgNnhvNyxMgm1AwryOyI9CM2jJvj6Vl-bD-xZoBvIPbggazVqEuAJnwgCEF4lbxp~lN-3rHQF0TvXcGYqNYw~yvo5W4upiwYfIi8HGkwa4-4gXN7QHI8qxg7f7mLA__" alt="Pastel Crop Sweater">
+                <div class="product-info">
+                    <h5>Crop Top</h5>
+                    <p>$59.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Jacket" data-size="L" data-name="Trench Coat" data-price="89.99">
+                <img src="https://s3-alpha-sig.figma.com/img/9a97/763e/0e58a06b2a099afdd55a73fe0bb62d81?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=F3f~yl74jYIgoUIFiRs8iJlFVY0pr8CjV2CphdsFC0gV0yttbxGLHvQKsCLIF1drdQJ39YI4~ZBhQp25QTekEiyhHMNVsOmKWe59NxldbentKhHSMqTkFK4tflSfU0lNk1Ftien9aZAVu2Ep1djrJLcWurYXnJZBOueYaP7a1BO2agcgdeHCZEZo0A8zjwGKeYE4GUsxKip53iFAPYvm9XlpwiiRbTN8Obcg~spbVEazIO6vJN8D~cqzq4x3nBxEAbTbJ-SlJ0AcOiw2dBY5yJJWoc0Cf5-lVrOWxjLas9Howao6-21yNng3jMQkZ6JvbjWRTbfrlbjAeynyX~-3IQ__" alt="Utility Trench Coat">
+                <div class="product-info">
+                    <h5>Trench Coat</h5>
+                    <p>$89.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Sweater" data-size="S" data-name="Hoodie" data-price="49.99">
+                <img src="https://s3-alpha-sig.figma.com/img/bcaa/aef8/f9114705a42f6424ba7179570f5433da?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WnOaWsMsum69a-koiYEWGy4jTtzrBg-dXNS4dhiWE55H1NCU3w8iuB4M0JdbWKHnoKInc2mr2Au3uauRgAuUHu4CYwhInobt-36WocHAMcQg5buCpEMOPCsqlBkBVWsF8MZKjDCzAFdCVEQbpYp2J8RRnBnc~ivnACsKhBu7bChm4EcudNoAkL2Cl9CwoJft9zhGZB5mM9cmJbu5TxLjhuYoUQDSlGi6d6n8SNiR5F1EEVHjqazw7mSaR706knSZNI5MI2gQKFrVrQuR08TKW-yt-Zl8AuTlEatk2fXFHbws~HK2uU7phdY08dExm4eM-tLdDY8R5KBCAGnFFVmDkA__" alt="Oversized Hoodie">
+                <div class="product-info">
+                    <h5>Hoodie</h5>
+                    <p>$49.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Top" data-size="M" data-name="Sweater" data-price="29.99">
+                <img src="https://s3-alpha-sig.figma.com/img/e86f/c69b/963d45270faba494ec193595b8ec6d68?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YEdHOHuaAaCHF0ZAQ-BVopeF9L~ncZDmPUs6UUQJvpUa0Pp7ly3sQ5aKCh2iXjlJM3AeJou-wW9jPWuC2zu7c1ybiQ-TZykalLTsDSxRJsbafwtLUzLHaitEubALKroYDuEETKgtL1EKiaASR8hPOWFaqDpS0xR~WDg4jdtt31ycVRxnnS2OAIp08dPD016sAqrKuwInbVnyMyEzzReeU1I-VL2qSM0OJ3OeZ9qYSG2~qSJpfEoUBTpMf4e~o2srSytu8P~IGG7NejJ-vroLcLOG2a8Pj6YEh9wmTJ981fod4WrYibeFeQuOvUQ9JpUUqET9fjcJENm76bpNxKJ4Hw__" alt="Cropped Tank Top">
+                <div class="product-info">
+                    <h5>Sweater</h5>
+                    <p>$29.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Pants" data-size="L" data-name="Wide Leg Pants" data-price="69.99">
+                <img src="https://s3-alpha-sig.figma.com/img/9ce7/1641/b8933d51339eb4f7be2e1477a1568478?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Lj4Zje30nPclOJsObKcLkHU7DaO9KkQ~AlH9Pv6NFFEwE~n7OBKrTAaB6So6~hSfp-KmFO9DZXmDYLiW7FyuQ4umr6HLqiUMDTZfP4iq4YW2rsCBikOqSNTv~DFz1~HZUYhbjmfxI0dMqCDwycDBtDiLAGaWd2~8n8s1jr9YMiUNtgrTZjeZeqiNUXZN53f0GUO6Lg8BxKGyHvaWGMc0mrgOtI7H8WvvNapPfAW5nJgi3D5iTjEOtn4DMVUp5pc6XfyoC5Flcqqmg2Zrla5naigxgbSMOVcBlYGO~44yx9pY3YI1QygPED24~OH~JXGl93A17a4KW5ZBZLDXwnDv1g__" alt="Wide Leg Pants">
+                <div class="product-info">
+                    <h5>Crop Top</h5>
+                    <p>$69.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Dress" data-size="S" data-name="Crop Top" data-price="79.99">
+                <img src="https://s3-alpha-sig.figma.com/img/206b/38d2/918d69b7f9b47721a285b3d209192598?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tOVaBtz95ESJjkwAOCasVjri~OcVMz9Snqn49riNxCxiJMDFEP1l1nyGRq40mUR6D17xrED71TCFg32SutQAuYYYInhD4~Vo24bCDlwj0wuOSfNnE2oIznvdznk4oxeDtdcBLgvivADkL35XJhe83nXARp0VNcbsoG5RMSGMVljV-pAwjZhGGppnVEQumns1ug7s87PKg3nCoHKETG6xy~Zthii-o5KJHUqV8G1TWlGjVe6BbOaH0Hwh6RgfUW0Qg7plnrcKFECdDk6EdJPVnRgdqhZrbWoUVr2kL0Dz~PRZ6GSRO1CYcCz2jIEc35EJi~aP2x8Iu03LUs0EISff5w__" alt="Floral Midi Dress">
+                <div class="product-info">
+                    <h5>Wide Leg Pants</h5>
+                    <p>$79.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Shorts" data-size="M" data-name="Denim Shorts" data-price="44.99">
+                <img src="https://s3-alpha-sig.figma.com/img/ff06/3f92/327f923cd7e70cf256c0b56033143d02?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TuEqFvh7Wjx93SjLbQEZ0NEp4sCMypQwmZQOE8c9krE2JwsPk3aFRavPnCaDbaXCYEbIgBVhlgjCGqPh0JW-SepFGpzKsAwc1GZgDJymCJB6puF1ecbOnai3vN1HZlZZvbEafDC0oMnOsXhLyGjEPD~NRZL28RFvEYSMidr-dt56pG9fuGjnnzuUSqPhP-lXV8TjWrSOmtSiHBBHYjNz1aMR13rs6-aSUKr~44fhY~FVH9dVleg9e8T6cyX4TX11UExPCT~-ntGw6fJ6VzpSwrMsD9qcis8u9ZaE~hTYdcqgLmgYo6xN~~8Pqzl842aI764ml1Ntr15XpObjRE9ZDA__" alt="Denim Shorts">
+                <div class="product-info">
+                    <h5>Sweater</h5>
+                    <p>$44.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Skirt" data-size="L" data-name="Pleated Mini Skirt" data-price="54.99">
+                <img src="https://s3-alpha-sig.figma.com/img/d0f9/d73a/af3f9df3b43bc1675b42a7b53a163b9d?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=pArF2oPiHIjgIrER2HGgLPiUDFxdmqnqZ8j4WungZ4m3V39Xo0YG-MA6Y-MR0iP48TrSiD2nJqtFjd3U6GgUrPAJffSaGdU-qsl~pCG5BYsGA4l09WcCXP-9ZF9vm9YpOMz-z~jEOmAL4jVg9fyAxv8zQp8rJg1TqNjXlPy5VyXP4KE7plg9qUVWqnhwe2BxR3EBua3IDBlPnd2ynNu2~fbOoi4yQxXyY~VtiATkpDhOIMM3P0nn7cr9Hp9LsZTCIGkWCq1PhB8dR4NPIkNUt6uZdKlpSfIYh65T2UL~51FjKW3Mcg8cLnhVLZwznrHK0dhPMEv9jxZiT05DrLZCCA__" alt="Pleated Mini Skirt">
+                <div class="product-info">
+                    <h5>Wide Leg Pants</h5>
+                    <p>$54.99</p>
+                </div>
+            </div>
+            <div class="product-card" data-type="Top" data-size="S" data-name="Basic Crop Top" data-price="24.99">
+                <img src="https://s3-alpha-sig.figma.com/img/4c2e/91c0/732592cc32965bf0dda58182ecdbee08?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rN3H4metkZA1UXa6VtzqcI-6ZPZg5NeEUPbwDGj3AJMo4ielcG3r7edruViaRwlp8Vl7z7n47~lz7aL25tP1sex0pDS8VbuM3WLck8aRLyh4bWiR97DW45~YTz1C7DPn1sMjWl1mGgbZCD7KkAw9SCLvxY~j-kRgaQ5qxRDbDUbf8HGdWtGR7DxlNbzhtkxmeEepXRdedybno2hHeTwhPAxTP096zJawNGE~Xcm6RaFDrDuJluqjp-02qm9JEdG6w-NG14F7r~VzkXGFkl~0~CQbEKowNSLwdtR~qjtyyVtGrzdZe~wmpWyIkGqLU9N7YtwtmB~DQOiyTvPTwNsF9w__" alt="Basic Crop Top">
+                <div class="product-info">
+                    <h5>Trench Coat</h5>
+                    <p>$24.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3">
+            <p id="product-count">Total 9 / 135 items</p>
+            <button onclick="alert('More items would be loaded here in a real application');" class="btn btn-dark">Load More Items</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>Fashion guides, tips, and The Most Wanted Trends</h3>
+        <div class="social-icons mt-3">
+            <a href="#" class="text-light mx-2">Instagram</a>
+            <a href="#" class="text-light mx-2">Facebook</a>
+            <a href="#" class="text-light mx-2">Twitter</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productGrid = document.getElementById('product-grid');
+            const productCards = Array.from(document.querySelectorAll('.product-card'));
+            const filterCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+            const sortDropdown = document.getElementById('sort-dropdown');
+            const productCountElement = document.getElementById('product-count');
+
+            // Filter functionality
+            function applyFilters() {
+                const activeTypeFilters = Array.from(document.querySelectorAll('input[data-filter="type"]:checked'))
+                    .map(checkbox => checkbox.value);
+                const activeSizeFilters = Array.from(document.querySelectorAll('input[data-filter="size"]:checked'))
+                    .map(checkbox => checkbox.value);
+
+                let visibleCount = 0;
+                productCards.forEach(card => {
+                    const passesTypeFilter = activeTypeFilters.length === 0 ||
+                        activeTypeFilters.includes(card.dataset.type);
+                    const passesSizeFilter = activeSizeFilters.length === 0 ||
+                        activeSizeFilters.includes(card.dataset.size);
+
+                    if (passesTypeFilter && passesSizeFilter) {
+                        card.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                // Update product count
+                productCountElement.textContent = `Total ${visibleCount} / 135 items`;
+            }
+
+            // Sorting functionality
+            function sortProducts(sortBy) {
+                const sortedCards = productCards.sort((a, b) => {
+                    switch(sortBy) {
+                        case 'price-low':
+                            return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+                        case 'price-high':
+                            return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+                        case 'name-asc':
+                            return a.dataset.name.localeCompare(b.dataset.name);
+                        case 'name-desc':
+                            return b.dataset.name.localeCompare(a.dataset.name);
+                        default:
+                            return 0;
+                    }
+                });
+
+                // Remove existing cards and re-append sorted cards
+                productGrid.innerHTML = '';
+                sortedCards.forEach(card => productGrid.appendChild(card));
+
+                // Reapply filters after sorting
+                applyFilters();
+            }
+
+            // Add event listeners to checkboxes
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', applyFilters);
+            });
+
+            // Add event listener to sort dropdown
+            sortDropdown.addEventListener('change', function() {
+                sortProducts(this.value);
+            });
+        });
+    </script>
+</body>
+</html>

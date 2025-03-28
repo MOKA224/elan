@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élan - Payment Page</title>
+    <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+    <header>
+        <div class="promo-banner">Get Extra 5% off on prepaid orders</div>
+        <nav class="top-nav">
+            <span>Help</span>
+            <span>Track Order</span>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Élan</h1>
+        <div class="progress-bar">BAG -------- ADDRESS -------- PAYMENT</div>
+
+        <section class="cart-section">
+            <div class="cart-content">
+                <h2>Cart (1 item)</h2>
+                <div class="cart-item">
+                    <img src="/api/placeholder/100/150" alt="Sweater" class="product-image">
+                    <div class="product-details">
+                        <h3>Sweater</h3>
+                        <p>Order in <strong>10 h 4 m</strong></p>
+                        <p>Get it by <strong>Tue, Mar 11</strong></p>
+                        <div class="product-actions">
+                            <button>Delete</button>
+                            <button>Move to wishlist</button>
+                            <div class="quantity-selector">
+                                <label for="quantity">Qty</label>
+                                <select id="quantity">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-price">EGP600</div>
+                </div>
+            </div>
+
+            <aside class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-details">
+                    <p>Subtotal (1 item) <span>EGP600</span></p>
+                    <p>Shipping Fee <span>EGP20</span></p>
+                    <p class="total">Total <span>EGP620</span></p>
+                </div>
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="payment" value="card">
+                        Debit/Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cod" checked>
+                        Cash On Delivery
+                    </label>
+                </div>
+                <button class="place-order">PLACE ORDER</button>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Fashion guides, tips, and The Most Wanted Trends</p>
+            <h2>Élan</h2>
+            <div class="social-media">
+                <a href="#"><img src="/api/placeholder/24/24" alt="Instagram"></a>
+                <a href="#"><img src="/api/placeholder/24/24" alt="Facebook"></a>
+                <a href="#"><img src="/api/placeholder/24/24" alt="LinkedIn"></a>
+                <a href="#"><img src="/api/placeholder/24/24" alt="TikTok"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

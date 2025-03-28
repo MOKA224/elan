@@ -1,0 +1,309 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEDDCC;
+    color: #34251F;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #EEDDCC;
+}
+
+.top-banner {
+    background-color: #34251F;
+    color: #FDF6F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions a {
+    color: #FDF6F2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.separator {
+    color: #FDF6F2;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.nav-steps {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.color-selection, .size-selection {
+    margin-bottom: 20px;
+}
+
+.color-selection h2, .size-selection h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-swatch.selected {
+    border-color: #34251F;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size-btn {
+    width: 80px;
+    height: 45px;
+    border: 2px solid #34251F;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn.selected {
+    background-color: #34251F;
+    color: #FDF6F2;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #34251F;
+    color: #FDF6F2;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.product-info {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Recommendations */
+.recommendations {
+    padding: 40px;
+}
+
+.recommendations h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.recommended-products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card .product-name {
+    font-size: 18px;
+}
+
+.product-card .product-price {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #34251F;
+    color: #FDF6F2;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-content p:first-child {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+.social-section p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-steps {
+        font-size: 16px;
+    }
+
+    .recommended-products {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .top-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-actions {
+        margin-top: 10px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-steps {
+        font-size: 14px;
+    }
+
+    .product-details h1 {
+        font-size: 26px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .recommended-products {
+        flex-direction: column;
+    }
+
+    .product-card {
+        flex-basis: 100%;
+    }
+
+    .recommendations h2 {
+        font-size: 32px;
+    }
+
+    .footer-content p:first-child {
+        font-size: 22px;
+    }
+
+    .brand-name {
+        font-size: 48px;
+    }
+}
