@@ -1,0 +1,93 @@
+/* Fade Effects */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Slide Effects */
+@keyframes slideUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Scale & Zoom Effects */
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@keyframes scaleDown {
+    from { transform: scale(1.2); }
+    to { transform: scale(1); }
+}
+
+/* Rotate & Flip */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes flip {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(180deg); }
+}
+
+/* Shake & Bounce */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Hover Effects */
+.hover-scale:hover {
+    animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+.hover-rotate:hover {
+    animation: rotate 0.5s ease-in-out forwards;
+}
+
+.hover-bounce:hover {
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+/* استخدام الأنيميشن في أي عنصر بسهولة */
+.fade-in { animation: fadeIn 1s ease-in-out forwards; }
+.fade-out { animation: fadeOut 1s ease-in-out forwards; }
+.slide-up { animation: slideUp 0.6s ease-in-out forwards; }
+.slide-down { animation: slideDown 0.6s ease-in-out forwards; }
+.slide-left { animation: slideLeft 0.6s ease-in-out forwards; }
+.slide-right { animation: slideRight 0.6s ease-in-out forwards; }
+.scale-up { animation: scaleUp 0.6s ease-in-out forwards; }
+.scale-down { animation: scaleDown 0.6s ease-in-out forwards; }
+.rotate { animation: rotate 1s linear infinite; }
+.flip { animation: flip 0.6s ease-in-out forwards; }
+.shake { animation: shake 0.4s ease-in-out forwards; }
+.bounce { animation: bounce 0.6s ease-in-out infinite; }
